@@ -1563,3 +1563,155 @@ nav a:hover {
   .lb-prev { left: calc(50% - 64px); }
   .lb-next { right: calc(50% - 64px); }
 }
+
+
+/* =====================================
+   TABLETS AND SMALL LAPTOPS
+===================================== */
+
+@media (max-width: 1024px) {
+
+    .wrap {
+        width: 92%;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .section {
+        padding: 65px 0;
+    }
+
+}
+
+
+/* =====================================
+   MOBILE PHONES
+===================================== */
+
+@media (max-width: 768px) {
+
+    /* GENERAL */
+
+    .wrap {
+        width: 92%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* HEADER */
+
+    header .bar {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    /* NAVIGATION */
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* HERO SECTION */
+
+    .hero {
+        min-height: auto;
+        padding: 55px 0;
+    }
+
+    .hero h1 {
+        font-size: clamp(38px, 10vw, 60px);
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    /* SECTION HEADINGS */
+
+    .section-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .section-heading h2 {
+        font-size: 36px;
+    }
+
+    /* COLUMNS */
+
+    .match-columns {
+        grid-template-columns: 1fr;
+    }
+
+    /* CARDS */
+
+    .cards,
+    .news-grid,
+    .squad-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* BUTTONS */
+
+    .btn {
+        max-width: 100%;
+    }
+
+    /* TICKER */
+
+    .ticker {
+        height: 42px;
+    }
+
+    .ticker-track {
+        font-size: 14px;
+        gap: 20px;
+    }
+
+    /* FOOTER */
+
+    footer {
+        text-align: center;
+    }
+
+}
+
+
+/* =====================================
+   SMALL MOBILE PHONES
+===================================== */
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .wrap {
+        width: 90%;
+    }
+
+    .btn {
+        padding: 12px 18px;
+        font-size: 13px;
+    }
+
+}
